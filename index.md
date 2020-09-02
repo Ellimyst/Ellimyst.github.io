@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/Ellimyst/Ellimyst.github.i
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-this a link to [Google](https://google.com)
+[check out my freestyle](freestyleacademy.rocks/~SumukhV)
 
 ### Markdown
 
