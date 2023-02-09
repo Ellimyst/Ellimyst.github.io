@@ -17,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "master -d build",
+    "deploy": "whoisvaze -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
