@@ -17,7 +17,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <table>
           <tr>A</tr>
-          <tr>BASSA</tr>
+          <tr>B</tr>
           <tr>C</tr>
         </table>
       </header>
