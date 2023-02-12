@@ -1,9 +1,9 @@
 
 
-function Shrine() {
-  return (
-    <p>abababab</p>
-  );
-}
+const Shrine = () => (
+  <div>
+    <p>Shrine</p>
+  </div>  
+);
 
 export default Shrine;

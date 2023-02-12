@@ -8,19 +8,10 @@ function App() {
     <div className="App">
       <div>
         <Navbar />
+      </div>
+      <div>
         <Main />
       </div>
-
-      <header className="App-header">
-        <h1>WORK IN PROGRESS</h1>
-        <p>hi.</p>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <table>
-          <tr>A</tr>
-          <tr>B</tr>
-          <tr>C</tr>
-        </table>
-      </header>
     </div>
   );
 }
