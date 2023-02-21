@@ -3,20 +3,26 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navigation/Navbar.js";
 import Main from '../Main.js'
+import { useState } from "react";
 
 function App() {
-  const [color, changeColor] = React.useState("#99f7e0");
+  const [color, changeColor] = useState("#99f7e0");
   document.body.style.backgroundColor = color;
 
   const changeBg = (bg) => {
     changeColor(bg)
   }
   
-  const auths = [];
+  const [auths, setAuths] = useState([]);
   
   const addAuth = (cred) => {
     if(!checkAuth(cred)) {
-      auths.push(cred)
+      setAuths(
+        [
+          ...auths,
+          cred
+        ]
+      )
     }
   }
   const checkAuth = (cred) => {
