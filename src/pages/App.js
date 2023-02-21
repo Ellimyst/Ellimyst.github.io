@@ -11,14 +11,30 @@ function App() {
   const changeBg = (bg) => {
     changeColor(bg)
   }
+  
+  const auths = [];
+  
+  const addAuth = (cred) => {
+    if(!checkAuth(cred)) {
+      auths.push(cred)
+    }
+  }
+  const checkAuth = (cred) => {
+    return auths.includes(cred)
+  }
 
   return (
     <div className="App">
       <div>
-        <Navbar changeBg={changeBg} />
+        <Navbar
+          changeBg={changeBg}
+          />
       </div>
       <div>
-        <Main />
+        <Main
+          addAuth={addAuth}
+          checkAuth={checkAuth}
+          />
       </div>
     </div>
   );
