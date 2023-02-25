@@ -7,11 +7,13 @@ import Authenticate from './pages/Authenticate';
 
 const Main = ({addAuth, checkAuth}) => {
   return (
+    <div className='box'>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/shrine' element={<Shrine checkAuth={checkAuth}/>}></Route>
       <Route path='/auth' element={<Authenticate addAuth={addAuth} checkAuth={checkAuth}/>}></Route>
     </Routes>
+    </div>
   );
 }
 
