@@ -14,7 +14,7 @@
     radial-gradient(circle at top, #32327f80 0%, #171a40 50%, transparent),
     radial-gradient(circle at bottom, #32327f80 0%, #171a40 50%, transparent); */
   background:
-  linear-gradient(to left, #32327f40 0%, #171a4040 15%, transparent),
-  linear-gradient(to right, #32327f40 0%, #171a4040 15%, transparent);
+  linear-gradient(to left, #00000040 0%, #171a4040 15%, transparent),
+  linear-gradient(to right, #00000040 0%, #171a4040 15%, transparent);
   height: 100vh;
 }
