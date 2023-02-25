@@ -6,7 +6,7 @@ import Main from '../Main.js'
 import { useState } from "react";
 
 function App() {
-  const [color, changeColor] = useState("#99f7e0");
+  const [color, changeColor] = useState("#171a40");
   document.body.style.backgroundColor = color;
 
   const changeBg = (bg) => {

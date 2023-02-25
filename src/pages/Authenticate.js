@@ -11,7 +11,7 @@ const Authenticate = ({addAuth, checkAuth}) => {
     }
   }
   return (
-  <div>
+  <div className="text">
     <p>auth</p>
     <input name="authInput" onChange={(e) => setInputValue(e.target.value)} value={inputValue}/>
     <button onClick={signIn}>Sign In</button>

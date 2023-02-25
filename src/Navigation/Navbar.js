@@ -22,10 +22,12 @@ const Navbar = ({changeBg}) => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <Link to="/" onClick={() => changeBg("#99f7e0")}>Home</Link>
+            <Link to="/" >Home</Link>
+            {/* onClick={() => changeBg("#99f7e0")} */}
           </li>
           <li className="nav-item">
-            <Link to="/shrine" onClick={() => changeBg("#416070")}>Shrine</Link>
+            <Link to="/shrine" >Shrine</Link>
+            {/* onClick={() => changeBg("#416070")} */}
           </li>
         </ul>
       </div>
