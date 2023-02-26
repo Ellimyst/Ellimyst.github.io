@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 const Shrine = ({checkAuth}) => {
   const navigate = useNavigate();
   useEffect(() => {
-    if(!checkAuth('auth')) {
-      navigate('/auth')
+    if(!checkAuth(1)) {
+      navigate('/auth', { state: { source: 'shrine', requiredAuth: 1 } })
     }
   });
+  
   return(
-    <div>
-      <p>Shrine</p>
+    <div className="text">
+      <p className="title">Shrine</p>
     </div>
   )
 };

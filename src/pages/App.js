@@ -13,20 +13,13 @@ function App() {
     changeColor(bg)
   }
   
-  const [auths, setAuths] = useState([]);
+  const [authLevel, setAuthLevel] = useState(0);
   
   const addAuth = (cred) => {
-    if(!checkAuth(cred)) {
-      setAuths(
-        [
-          ...auths,
-          cred
-        ]
-      )
-    }
+    setAuthLevel(cred)
   }
   const checkAuth = (cred) => {
-    return auths.includes(cred)
+    return authLevel >= cred
   }
 
   return (
@@ -38,8 +31,8 @@ function App() {
       </div>
       <div>
         <Main
-          addAuth={addAuth}
-          checkAuth={checkAuth}
+        addAuth={addAuth}
+        checkAuth={checkAuth}
           />
       </div>
     </div>

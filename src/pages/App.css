@@ -18,3 +18,10 @@
   linear-gradient(to right, #00000080 0%, #171a4040 50%, transparent);
   height: 100vh;
 }
+
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
