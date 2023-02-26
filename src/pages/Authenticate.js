@@ -22,14 +22,21 @@ const Authenticate = ({addAuth, checkAuth}) => {
   const [pwdText, setPwdText] = useState('');
   const [txtClass, setTxtClass] = useState('');
 
+  const setAuth = (level) => {
+    addAuth(level);
+    setTxtClass('success')
+    setPwdText('Authenticated Successfully');
+    setPText('');
+  };
+
   const navigate = useNavigate();
   const signIn = () => {
     switch (sha256(inputValue)) {
       case 'f5080edf6220a092c735d98a5ab380f930850b4d8728b2395d32576cd5f96a4c':
-        addAuth(5);
-        setTxtClass('success')
-        setPwdText('Authenticated Successfully');
-        setPText('');
+        setAuth(5);
+        break;
+      case '1872d6a68ae0c56d6564f9dc6c880e4c8756941e2051786e49c9d3eea85b048b':
+        setAuth(2);
         break;
       default:
         setTxtClass('error');
