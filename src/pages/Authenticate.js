@@ -26,7 +26,7 @@ const Authenticate = ({addAuth, checkAuth}) => {
   const signIn = () => {
     switch (sha256(inputValue)) {
       case 'f5080edf6220a092c735d98a5ab380f930850b4d8728b2395d32576cd5f96a4c':
-        addAuth(1);
+        addAuth(5);
         setTxtClass('success')
         setPwdText('Authenticated Successfully');
         setPText('');
