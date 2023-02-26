@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'MajorMonoDisplay';
+  src: local('MajorMonoDisplay'), url(../fonts/MajorMonoDisplay-Regular.ttf) format('truetype');
+}
 .text {
   text-align: center;
   color: rgb(150, 150, 100);
   padding-inline: 50px;
   font-size: 35px;
+  font-family: MajorMonoDisplay;
 }
 
 .title {
