@@ -1,0 +1,66 @@
+/* CalendarView.css */
+.highlighted-date {
+  position: relative;
+  background-color: #ff944d; /* Customize the background color for the highlighted dates */
+  z-index: 1; /* Make sure the highlight appears above other content */
+}
+
+.current-date {
+  position: relative;
+  background-color: #f6f8ab; /* Customize the background color for the current date if needed */
+  z-index: 1; /* Make sure the highlight appears above other content */
+  color: #000000;
+}
+
+.past-date {
+  background-color: #c4e78a; /* Customize the background color for the days that have passed */
+  color: #808080; /* Customize the text color for the days that have passed */
+}
+
+.future-date {
+  background-color: #ffb689; /* Customize the background color for the days that are yet to come */
+  color: #870101;
+}
+
+/* Set the height to be 60% of the screen height and the width to be 80% of the screen width */
+.react-calendar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  height: 60vh;
+  width: 80vw;
+  margin: 0 auto; /* Center the calendar horizontally */
+  position: relative; /* Add relative positioning to the calendar container */
+  padding-top: 3rem; /* Add padding to create space for the navigation bar */
+}
+
+/* Position the navigation arrows fixed at the sides */
+.react-calendar__navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem; /* Set the height of the navigation bar as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Stretch the calendar tiles to fit within the calendar container */
+.react-calendar__month-view__days__day {
+  flex: 1 0 calc(100% / 7); /* Each tile takes 1/7 of the available width (100% divided by 7 days) */
+  box-sizing: border-box; /* Make sure padding and border are included in the width calculation */
+  height: calc((60vh - 3rem) / 6); /* Adjust the height based on the available space after padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: Increase the font size of the calendar days for better visibility */
+.react-calendar__month-view__days__day,
+.react-calendar__year-view__months__month,
+.react-calendar__decade-view__years__year,
+.react-calendar__century-view__decades__decade {
+  font-size: 18px; /* Adjust the font size as needed */
+}
