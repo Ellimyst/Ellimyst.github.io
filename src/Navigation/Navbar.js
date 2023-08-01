@@ -29,6 +29,10 @@ const Navbar = ({changeBg}) => {
             <Link to="/shrine" >Shrine</Link>
             {/* onClick={() => changeBg("#416070")} */}
           </li>
+          <li className="nav-item">
+            <Link to="/calendar" >Calendar</Link>
+            {/* onClick={() => changeBg("#416070")} */}
+          </li>
         </ul>
       </div>
     </nav>
