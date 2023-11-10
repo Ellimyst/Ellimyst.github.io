@@ -14,7 +14,7 @@ const CalendarPage = ({checkAuth}) => {
   
   // Set your startDate and endDate here
   const startDateStr = '2023-06-22';
-  const endDateStr = '2023-12-05';
+  const endDateStr = '2023-11-30';
   const startDate = moment(startDateStr);
   const endDate = moment(endDateStr);
 
