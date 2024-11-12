@@ -12,10 +12,12 @@
     "csso": "^5.0.5",
     "js-sha256": "^0.9.0",
     "moment": "^2.29.4",
+    "pdfjs-dist": "^4.8.69",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-calendar": "^4.6.0",
     "react-dom": "^18.2.0",
+    "react-pdf": "^9.1.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"

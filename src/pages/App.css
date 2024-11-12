@@ -6,6 +6,7 @@
   text-align: center;
   color: rgb(150, 150, 100);
   padding-inline: 50px;
+  padding-top: 5rem;
   font-size: 35px;
   font-family: MajorMonoDisplay;
 }
@@ -32,4 +33,105 @@
 }
 .input {
   font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.nav-link {
+  color: rgb(150, 150, 100);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  border-color: rgb(150, 150, 100);
+}
+
+.home-link-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(23, 26, 64, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  text-align: center;
+}
+
+.home-link {
+  font-weight: bold;
+  font-family: MajorMonoDisplay;
+  color: rgb(150, 150, 100);
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+  font-size: 50px;
+  font-family: MajorMonoDisplay;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.home-link:hover {
+  color: rgb(180, 180, 120);
+  transform: translateX(-5px);
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.download-button {
+  background: transparent;
+  border: 2px solid rgb(150, 150, 100);
+  color: rgb(150, 150, 100);
+  padding: 0.5rem 1rem;
+  font-family: MajorMonoDisplay;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  background: rgba(150, 150, 100, 0.1);
+  transform: translateY(-2px);
+}
+
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 850px; /* Adjust based on your needs */
+}
+
+/* Style for the PDF pages */
+.react-pdf__Page {
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add loading state styles */
+.react-pdf__Document {
+  position: relative;
+}
+
+.react-pdf__Document.loading {
+  min-height: 400px;
+}
+
+.react-pdf__message .react-pdf__message--error {
+  color: red !important;
 }
