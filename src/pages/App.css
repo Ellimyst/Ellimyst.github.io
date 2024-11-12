@@ -20,9 +20,10 @@
     radial-gradient(circle at top, #32327f80 0%, #171a40 50%, transparent),
     radial-gradient(circle at bottom, #32327f80 0%, #171a40 50%, transparent); */
   background:
-  linear-gradient(to left, #00000080 0%, #171a4040 50%, transparent),
-  linear-gradient(to right, #00000080 0%, #171a4040 50%, transparent);
-  height: 100vh;
+    linear-gradient(to left, #00000080 0%, #171a4040 50%, transparent),
+    linear-gradient(to right, #00000080 0%, #171a4040 50%, transparent);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .error {
@@ -42,7 +43,7 @@
   margin-top: 2rem;
 }
 
-.nav-link {
+/* .nav-link {
   color: rgb(150, 150, 100);
   text-decoration: none;
   font-size: 1.5rem;
@@ -52,7 +53,32 @@
 }
 
 .nav-link:hover {
-  border-color: rgb(150, 150, 100);
+  border-color: rgb(200, 200, 150);
+} */
+
+.nav-link {
+  color: rgb(150, 150, 100);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  position: relative; /* Add this */
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  bottom: 0;
+  left: 50%;
+  background-color: rgb(150, 150, 100);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .home-link-container {
@@ -61,7 +87,7 @@
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background: rgba(23, 26, 64, 0.8);
+  background: rgba(12, 114, 75, 0.273);
   backdrop-filter: blur(5px);
   z-index: 1000;
   text-align: center;
@@ -70,7 +96,7 @@
 .home-link {
   font-weight: bold;
   font-family: MajorMonoDisplay;
-  color: rgb(150, 150, 100);
+  color: rgb(107, 107, 26);
   text-decoration: none;
   /* font-size: 1.2rem; */
   font-size: 50px;
@@ -80,7 +106,7 @@
 }
 
 .home-link:hover {
-  color: rgb(180, 180, 120);
+  color: rgb(157, 157, 76);
   transform: translateX(-5px);
 }
 
