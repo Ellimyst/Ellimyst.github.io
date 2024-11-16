@@ -8,6 +8,7 @@ import CalendarPage from './pages/CalendarPage';
 import Profile from './pages/Profile';
 import Resume from './pages/Resume';
 import Blog from './pages/Blog';
+import Time from './pages/Time';
 
 const Main = ({addAuth, checkAuth}) => {
   return (
@@ -24,6 +25,7 @@ const Main = ({addAuth, checkAuth}) => {
         <Route path='/profile' element={<Profile />} />
         <Route path='/resume' element={<Resume />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/time' element={<Time />} />
       </Routes>
     </div>
   );

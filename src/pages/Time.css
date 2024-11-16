@@ -1,0 +1,105 @@
+.time-converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.datetime-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.date-input,
+.time-input {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 2px solid rgb(150, 150, 100);
+  border-radius: 8px;
+  background: transparent;
+  color: rgb(150, 150, 100);
+  width: 200px;
+  text-align: center;
+}
+
+.time-result {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.time-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(150, 150, 100, 0.1);
+}
+
+.time-label {
+  font-size: 1.2rem;
+  color: rgb(150, 150, 100);
+  min-width: 80px;
+}
+
+.datetime-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.date-value {
+  font-size: 1.2rem;
+  color: rgb(150, 150, 100);
+}
+
+.time-value {
+  font-size: 1.5rem;
+  color: rgb(150, 150, 100);
+  font-weight: bold;
+}
+
+.timezone-label {
+  font-size: 1rem;
+  color: rgb(150, 150, 100);
+  opacity: 0.8;
+  margin-left: 0.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .date-input,
+  .time-input {
+    width: 150px;
+    font-size: 1.2rem;
+  }
+
+  .time-display {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .time-label {
+    min-width: auto;
+  }
+}
